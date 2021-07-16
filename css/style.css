@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*** reset ***/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-indent: 0;
+}
+
+img {
+  -webkit-backface-visibility: hidden;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+}
+
+address,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ins,
+pre,
+strong,
+th {
+  font-style: normal;
+  font-weight: 400;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+}
+
+th {
+  text-align: left;
+}
+
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+
+a,
+ins {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+br {
+  letter-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/***cleasrfix hack***/
+.hack::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*end hide*/
+.clear {
+  clear: both;
+}
+
+/*** font ***/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-feature-settings: "palt";
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+/*family*/
+body {
+  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 740px) {
+  body {
+    font-weight: 400;
+  }
+}
+
+.f_go {
+  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 740px) {
+  .f_go {
+    font-weight: 400;
+  }
+}
+
+.f_en {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+
+/*** link ***/
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+  color: #000;
+}
+
+/***PC／スマホ切替***/
+.sp {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 740px) {
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+}
+
+.base_w {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1000px) {
+  .base_w {
+    width: 90%;
+  }
+}
+
+.top-page .boxs {
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-page .boxs a {
+  display: block;
+}
+
+.top-page .boxs .h_logo {
+  width: 500px;
+  margin-right: 20px;
+}
